@@ -42,13 +42,14 @@ angular.module('conFusion', ['ionic', 'conFusion.controllers','conFusion.service
   })
 
   .state('app.aboutus', {
-      url: '/aboutus',
-      views: {
-        'mainContent': {
-          templateUrl: 'templates/aboutus.html'
+        url: '/aboutus',
+        views: {
+          'mainContent': {
+            templateUrl: 'templates/aboutus.html',
+            controller: 'AboutController'
+          }
         }
-      }
-    })
+})
 
    .state('app.contactus', {
       url: '/contactus',
